@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Task2</title>
+</head>
+
+<style>
+    .head{
+        background-color: black;
+        color: white;
+        
+        height: 25px;
+        padding-top: 5px;
+        font-size: 12px;
+        font-family:Calibri;
+    }
+    .logout, .l{
+        display: inline;
+        margin-left: 150px;
+    }
+    .logout{
+        background: transparent;
+        font-size: 12px;
+        color: white;
+        margin-left: 500px;
+        border-color:black; 
+    }
+    .info{
+        background: url(back.png);
+        padding: 10px;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+    }
+    /* .exp, p,h2{
+        display: inline;
+    } */
+    .time{
+        
+        font-family: calibri;
+        margin-left: 250px;
+    }
+    .exp{
+        width: 150px;
+        height: 40px;
+        margin-left: 130px
+    }
+    .live{
+        margin-left: 200px;
+        font-family: calibri;
+        font-size: 20px;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: white;
+    }
+    .status{
+        margin-left: 170px;
+        font-family: calibri;
+        /* border: solid; */
+        height: 20px;
+        padding-top: 10px;
+        font-size: 15px;
+    }
+    .box1, .box2{
+        display:inline-block;
+        /* border: solid;
+        border-color: black;
+        background-color: skyblue; */
+       
+       
+        
+    }
+    .box1{
+        margin-left: 150px;
+        padding: 10px;
+        width: 160px;
+        height: 330px;
+        
+    }
+    .box2{
+    
+        margin-left: 10px;
+        margin-top: 20px;
+        padding: 10px;
+        width: 650px;
+        height: 337px;
+    }
+    
+    .button {
+        outline: 1px;
+        border-color: black;
+        color: green;
+        text-align: center;
+        display: inline-block;
+        font-size: 16px;
+        margin-left: 60px;
+        margin-top: 1px;
+        margin-bottom: 12px;
+        border-radius: 50px;
+
+    }
+    .form{
+        margin-top: 2px;
+        width: 150px;
+        text-align: center;
+        font-family: calibri;
+        outline: 1px;
+        border-color: rgb(31, 140, 184);
+    }
+    .park1{
+        margin-top: 2px;
+        width: 150px;
+        text-align: center;
+        font-family: calibri;
+        outline: 1px;
+        border-color: rgb(31, 140, 184);
+    }
+    .park{
+        margin-top: 15px;
+        width: 150px;
+        text-align: center;
+        font-family: calibri;
+        outline: 1px;
+        border-color: rgb(31, 140, 184);
+    }
+    .Record{
+        margin-left: 45px;
+        font-family: arial;
+        font-size: 10px;
+    }
+    input.checkbox{
+        width: 40px;
+        border: solid;
+        border-radius:20px;
+        margin-left: 15px; 
+        font-size: 10px;
+        text-align: center;
+    }
+    .check{
+        margin-left:-15px;
+        background-color: lightgreen;
+        font-size: 12px;
+        font-family: arial;
+    }
+    .check1{
+        margin-left:29px;
+        margin-top: 2px;
+        font-size: 12px;
+        font-family: arial;
+    }
+    .dial{
+        margin-bottom: 15px;
+        background-color: rgb(167, 241, 217);
+        width: 150px;
+        text-align: center;
+        font-family: calibri;
+        outline: 1px;
+        border-color: rgb(31, 140, 184);
+    }
+    .basic-info{
+        display: inline;
+    }
+    .nevi{
+        
+        display: flex;
+        list-style: none;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        font-size: 12PX;
+    }
+    .nevi a{
+        text-decoration: none;
+        display: block;
+        padding: 1px;
+    }
+    .heading{
+        display: flex;
+        justify-content: center;
+        font-size: 16px;
+        text-align: center;
+    }
+    .form{
+        display: inline;
+    }
+    .form >input{
+        height: 17px;
+        margin-top: 2px;
+    
+    }
+
+    
+    .fline{
+        font-size: 12px;
+        margin-left: 2px;
+    }
+    .Fline{
+        font-size: 12px;
+        margin-left: 20px;
+    }
+    .ttext{
+        margin-left: 20px;
+        width: 35px;
+    }
+    .ftext{
+        width: 150px;
+    }
+    .mtext{
+        width: 35px;
+    }
+    .ltext{
+        width: 150px;
+    }
+    .Aline{
+        font-size: 14px;
+    }
+    .Atext{
+        width: 473px;
+        margin-left: 7px;
+    }
+    .Aline2{
+        font-size: 12px;
+    }
+    .Aline3{
+        font-size: 12px;
+        margin-left: 3px;
+    }
+    .Atext3{
+        width: 237px;
+        margin-left: 4px;
+    }
+    .Atext2{
+        width: 170px;
+        margin-left: 16px;
+    }
+    .zline{
+        text-align: right;
+        font-size: 12px;
+        margin-left: 3px;
+    }
+    .city{
+        margin-left: 21px;
+        font-size: 12px;
+    }
+    .ctext{
+        width: 170px;
+        margin-left: 22px;
+    }
+    .state{
+        width: 90px;
+        margin-left: 23px;
+    }
+    .postal{
+        width: 74px;
+    }
+    .prov{
+        font-size: 12px;
+        margin-left: 2px;
+    }
+    .provi{
+        margin-left: 17px;
+        width: 170px;
+    }
+    .vendor{
+        width: 90px;
+    }
+    .gender{
+        width: 122px;
+    }
+    .phone{
+        font-size: 12px;
+        margin-left: 6px;
+    }
+    .ph{
+        margin-left: 24px;
+        width: 170px;
+    }
+    .dialcode{
+        width: 90px;
+        margin-left: 5px;
+    }
+    .alt{
+        width: 83px;
+    }
+    .show{
+        font-size: 12px;
+        text-align: center;
+        margin-left: 12px;
+    }
+    .sho{
+        width: 170px;
+        margin-left: 23px;
+    }
+    .email{
+        width: 238px;
+        margin-left: 22px;
+    }
+
+    .comm{
+        font-size: 12px;
+        margin-left: 5px;
+    }
+    .comment{
+        width:475px;
+        margin-left: 8px;
+        padding-bottom: 25px;
+        padding-top: 10px;
+    }
+    .agent{
+        background: white;;
+        font-size: 12px;
+        color:orange;
+        margin-left: 500px;
+        border-color:white; 
+        
+    }
+    
+    .customer{
+        margin-left: 7px;
+    }
+    .channel{
+        margin-left: 180px;
+    }
+    .secounds{
+        margin-left: 190px;
+    }
+    .customer, .channel, .secounds{
+        font-family: calibri;
+    }
+    .foot{
+        /* border: solid;
+        border-color: black; */
+        margin-left: 150px;
+        margin-top: 50px;
+    }
+    .simple{
+        font-size: 12px;
+
+    }
+    .org{
+        padding-bottom: 10px;
+        font-size: 12px;
+        color: orange;
+    }
+    
+
+</style>
+<body>
+    <div class="head">
+        <p class="l">Logged in as User 2002 on Phone: SIP/2002 to compaign:VBROAD </p>
+        <input class="logout" type="submit" value="LOGOUT">
+    </div>
+
+    <div class="info">
+        <img class="exp" src="epert.png" alt="Expert">
+        <label class="time" for="time">2019-09-18 01:32:23  session ID:8600051</label>
+        <label class="live" for="live">NO LIVE CALL</label>
+    </div>
+
+    <div class="status">
+        <p> <b> STATUS: </b> </p>  
+    </div>
+
+        <!-- ------------------------------------------------------------ -->
+
+    
+            
+            <div class="box1">
+                <input class="dial" type="button" value="Dial NEXT NUMBER"> <br>
+                
+                <input class="checkbox" type="checkbox" name="LEAD PREVIEW " id="LEAD PREVIEW">
+                <label class="check" for="REORD ID:">LEAD PREVIEW:</label> <br>
+                <label class="check1" for="REORD ID:">RECORDING FILE:</label> <br>
+                <label class="Record" for="REORD ID:">RECORD ID:</label><br>
+    
+               
+        
+                <button class="button">o</button> 
+    
+                <input class="form" type="button" value="WEB FORM">
+    
+                <input class="form" type="button" value="WEB FORM 2">
+    
+                <input class="park" type="button" value="PARK CALL">
+    
+                <input class="park1" type="button" value="TRANSFER / CONF">
+    
+                <input class="park" type="button" value="HANGUP CUSTOMER">
+    
+                <input class="park" type="button" value="BEND DTMF"> <br><br>
+    
+                
+            </div>
+            <!-- ------------------------------------------------ -->
+            <div class="box2">
+                <label class="customer" for="Customer Time">Customer Time:</label>
+                <label class="channel" for="Channel">channel:</label>
+                <label class="secounds" for="secounds">secounds:</label> <br>
+                <h2 class="heading"> Customer information:</h2>
+                <!-- ------------------------------------------------ -->
+                <form action="taskconnect.php", method="POST">
+                <div class="form">
+                    <label class="Fline" for="Title">Title:</label>
+                    <input class="ttext" type="text" name="title" id="title">
+                    <label class="fline" for="First">First:</label>
+                    <input class="ftext" type="text" name="first" id="first">
+                    <label class="fline" for="MI">MI:</label>
+                    <input class="mtext" type="text" name="middle" id="mi">
+                    <label class="fline" for="Last">Last:</label>
+                    <input class="ltext" type="text" name="last" id="last"> <br>
+                    <label class="Aline" for="Title"> <b> Address1: </b> </label>
+                    <input class="Atext" type="text" name="address1" id="address1"><br>
+                    <label class="Aline2" for="Title">Address2:</label>
+                    <input class="Atext2" type="text" name="address2" id="address2">
+                    <label class="Aline3" for="Title">Address3:</label>
+                    <input class="Atext3" type="text" name="address3" id="address3"> <br>
+                    <label class="city" for="City">City:</label>
+                    <input class="ctext" type="text" name="city" id="ctext">
+                    <label class="zline" for="State">State:</label>
+                    <input class="state" type="text" name="state" id="stext">
+                    <label class="zline" for="postal">Postal code:</label>
+                    <input class="postal" type="text" name="postal" id="postal"> <br>
+                    <label class="prov" for="State">Province:</label>
+                    <input class="provi" type="text" name="province" id="stext">
+                    <label class=" zline" for="State">Vendor ID:</label>
+                    <input class="vendor" type="text" name="vendor" id="stext">
+
+                    <label class="zline" for="State">Gender:</label>
+                    <select name="gender">
+                        <option value="Undefined" name="gender" >U-Undefined</option>
+                        <option value="Male" name="gender" >Male</option>
+                        <option value="Female" name="gender" >Female</option>
+                        </select> <br>
+
+                    <label class="phone" for="State">Phone:</label>
+                    <input class="ph" type="text" name="phone" id="stext">
+                    <label class="zline" for="State">DialCode:</label>
+                    <input class="dialcode" type="text" name="dial" id="stext">
+                    <label class="zline" for="State">Alt.phone:</label>
+                    <input class="alt" type="text" name="altphone" id="altphone"><br>
+                    <label class="show" for="State">service:</label>
+                    <input class="sho" type="text" name="service" id="stext">
+                    <label class="zline" for="State">Email:</label>
+                    <input class="email" type="text" name="email" id="stext"> <br>
+                    <label class="comm" for="State">Comment:</label>
+                    <input class="comment" type="text" name="comment" id="stext"> <br><br>
+                    <input class="agent" type="submit" value="Agent View +">
+                </div>
+            </form>
+                
+
+            </div>
+        <div class="foot">
+                <p class="simple"> VERSION: 214585c   BUILD: 190730-0925  Server: 184.95.52.187</p>
+                <p class="org"> Show conference call channel information</p>
+        </div>
+</body>
+</html>

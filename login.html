@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+        
+    
+    <title>Login Form</title>
+    <style>
+        body{
+            background: url(call.jpg);
+
+        }
+        .Main{
+            margin: 0 auto;
+        }
+        .text{
+            /* display: flex; */
+            /* justify-content: center; */
+            margin-left: 450px;
+            margin-top: 170px;
+            border: solid;
+            width: 500px;
+            padding: 50px;
+            margin-right: 620px;
+            border-color: whitesmoke;
+            padding-top: 20px;
+            font-size: 20px;
+            background: transparent;
+            font-family: Calibri;
+            border-radius: 30px;
+            
+        }
+        h1{
+            text-align: center;
+            font: bold;
+            font-size: 20px;
+            margin-bottom: 30px; 
+        }
+        .submit{
+            margin-left: 5520px;
+        }
+        .round{
+            text-align: center;
+            border-radius: 10px;
+        }
+        .user{
+            margin-left: 30px;
+        }
+        .head{
+            
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+        }
+        .logo{
+            width: 150px;
+            height: 50px;
+            margin-left: 50px;
+        }
+        .text > .btn{
+            display: flex;
+            justify-content: center;
+            
+        }
+    </style>
+</head>
+<body>
+        <div class="Main" >  
+            <form action="loginconnect.php" method="POST">
+                <div class="head">
+                    <img class="logo" src="epert.png" alt="icon">
+                    <label class="btn" for="Administration"> <b> Administration </b></label>
+                </div>
+            
+                <div class="text">
+                    <h1> <p>Agent Login</h1>
+
+                    <label class="user" for="Username">PhoneLogin:</label>
+                    <input class="round" type="text" name="username" placeholder="Useranme" required style="margin-left: 3px; height:23px; margin-bottom: 5px" > <br>
+                    
+                    <label for="Password">PhonePassword:</label>
+                    <input class="round" type="paaword" name="password" placeholder="Password" required style="height:23px"> <br>
+
+                    <input  class="btn" type="submit" value="Submit" style="text-align: center; margin-top: 10px; background-color:rgb(43, 180, 235); width:70px; height: 35px; border: rgb(43, 180, 235); color: white; cursor: pointer;">
+                </div>
+            </form>
+        </div>   
+    </body>
+</html>

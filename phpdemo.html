@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+    <title>Login</title>
+</head>
+<style>
+    body{
+        background: url(call.jpg)
+    }
+    .main{
+        display: flex;
+        justify-content: center;
+        border: solid orange;
+        background-color: rgba(86, 98, 204, 0.2);
+        width: 350px;
+        flex-flow: row wrap;
+        font-size: 22px;
+        border-radius: 50px;
+        padding: 20px;
+        margin-left: 500px;
+        margin-top: 200px;
+    }
+    .text{
+        /* border: solid black; */
+        flex-flow: column wrap;
+        height: 100px;
+        width: 120px;
+    }
+    .text > label{
+        display: flex;
+        flex-flow: column wrap;
+        margin-top: 10px;
+        
+        
+    }
+    .inp{
+        /* border: solid black; */
+        height: 120px;
+        width: 200px;
+        text-align: center;
+        
+
+    }
+    .inp > .ans{
+        display: flex;
+        flex-flow: column wrap;
+        margin-top: 8px;
+        height: 25px;
+        text-align: center;
+        font-size: 14px;
+        font: bold;
+        
+
+    }
+</style>
+<body>
+    
+    <form action="phpdemo.php" method="POST">
+        <div class="main">
+            <div class="text">
+                <label for="Father Name">Father Name</label>
+                <Label> User Name</Label>
+                <Label>Gender</Label>
+            </div>
+            <div class="inp">
+                <input class="ans" type="text" name="fname">
+                <input class="ans" type="text" name="uname">
+                <select class="ans" name="gender" id="" style=" text-align: center; width: 168px; height:25px ">
+                    <option value="Undefined">Undefined</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+
+            </div>
+            <input type="submit" value="Register">
+        </div>
+    </form>
+</body>
+</html>
